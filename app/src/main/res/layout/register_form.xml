@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wekebere.openapp.RegisterForm">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:scrollbars="none"
+        android:background="@color/white_color"
+        android:layout_above="@+id/bottom_panel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginTop="100px"
+                app:srcCompat="@drawable/wekebere_logo"
+                tools:scaleType="fitCenter" />
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Full Name"
+                android:layout_marginTop="20dp"
+                android:text="" />
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Email Address"
+                android:layout_marginTop="20dp"
+                android:text="" />
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_marginTop="20dp"
+                android:text="" />
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:layout_marginTop="20dp"
+                android:text="" />
+            <TextView
+                android:id="@+id/submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white_color"
+                android:text="Register" />
+        </LinearLayout>
+
+
+    </ScrollView>
+    <!--      BOTTOM ACTION BAR -->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:windowSoftInputMode="adjustNothing"
+        android:background="@drawable/border_set"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:layout_marginBottom="30px"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:layout_marginBottom="30px"
+            android:layout_height="wrap_content"
+            android:text="|"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:layout_marginBottom="30px"
+            android:layout_height="wrap_content"
+            android:text="News"/>
+    </LinearLayout>
+
+</RelativeLayout>

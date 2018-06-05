@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wekebere.openapp.LoginForm">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:scrollbars="none"
+        android:background="@color/white_color"
+        android:layout_above="@+id/bottom_panel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginTop="100px"
+                app:srcCompat="@drawable/wekebere_logo"
+                tools:scaleType="fitCenter" />
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Email Address"
+                android:layout_marginTop="20dp"
+                android:text="" />
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_marginTop="20dp"
+                android:text="" />
+            <LinearLayout
+                android:id="@+id/actions_button"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/register_button"
+                    android:layout_width="0dip"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginBottom="30px"
+                    android:textColor="@color/white_color"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Register"/>
+                <TextView
+                    android:id="@+id/login_button"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginBottom="30px"
+                    android:textColor="@color/white_color"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="Login"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forgotten_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="FORGOT PASSWORD" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <!--      BOTTOM ACTION BAR -->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:windowSoftInputMode="adjustNothing"
+        android:background="@drawable/border_set"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:layout_marginBottom="30px"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:layout_marginBottom="30px"
+            android:layout_height="wrap_content"
+            android:text="|"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:layout_marginBottom="30px"
+            android:layout_height="wrap_content"
+            android:text="News"/>
+    </LinearLayout>
+</RelativeLayout>

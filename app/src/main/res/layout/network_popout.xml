@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:gravity="center"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250px"
+        android:layout_height="200px"
+        android:background="@drawable/wifi_off"
+        />
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Your internet connection has gone missing"
+        android:textSize="8pt" />
+    <TextView
+        android:id="@+id/try_button"
+        android:layout_width="400px"
+        android:layout_height="100px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:layout_marginTop="40px"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white_color"
+        android:text="Try Again"
+        android:textSize="12pt" />
+
+</LinearLayout>

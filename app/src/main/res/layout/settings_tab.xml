@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="105px"
+    tools:context="com.wekebere.helpers.SettingsTab">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:scrollbars="none"
+    android:background="@color/white_color"
+    android:layout_above="@+id/bottom_panel">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+           <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:text="Lower limit contraction" />
+            <EditText
+                android:id="@+id/lower_limtit_cont"
+                android:layout_width="fill_parent"
+                android:layout_height="70px"
+                android:ems="10"
+                android:inputType="number"
+                android:background="@color/white_color"
+                android:layout_marginTop="5dp"
+                android:text="2" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:text="Upper limit contraction" />
+            <EditText
+                android:id="@+id/upper_limtit_cont"
+                android:layout_width="fill_parent"
+                android:layout_height="70px"
+                android:ems="10"
+                android:inputType="number"
+                android:background="@color/white_color"
+                android:layout_marginTop="20dp"
+                android:text="5" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:text="Lower limit FHR" />
+        <EditText
+            android:id="@+id/lower_fhr"
+            android:layout_width="fill_parent"
+            android:layout_height="70px"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@color/white_color"
+            android:layout_marginTop="20dp"
+            android:text="110" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:text="Upper limit FHR" />
+        <EditText
+            android:id="@+id/upper_fhr"
+            android:layout_width="fill_parent"
+            android:layout_height="70px"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@color/white_color"
+            android:layout_marginTop="20dp"
+            android:text="160" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:text="Sampling Frequency" />
+        <EditText
+            android:id="@+id/samp_freq"
+            android:layout_width="fill_parent"
+            android:layout_height="70px"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@color/white_color"
+            android:layout_marginTop="20dp"
+            android:text="1000" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_color"
+            android:text="Diagnosis Timer (S)" />
+        <EditText
+            android:id="@+id/diag_timer"
+            android:layout_width="fill_parent"
+            android:layout_height="70px"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@color/white_color"
+            android:layout_marginTop="20dp"
+            android:text="120" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_color"
+            android:text="Track progress date" />
+        <EditText
+            android:id="@+id/run_date"
+            android:layout_width="fill_parent"
+            android:layout_height="70px"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@color/white_color"
+            android:layout_marginTop="20dp"
+            android:text="120" />
+        </LinearLayout>
+
+
+    </ScrollView>
+    <!--      BOTTOM ACTION BAR -->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:windowSoftInputMode="adjustNothing"
+        android:background="@drawable/border_set"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/update_tab"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10px"
+            android:paddingBottom="20px"
+            android:textColor="@color/white_color"
+            android:textSize="8pt"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent"
+            android:text="Update"/>
+    </LinearLayout>
+</RelativeLayout>
+</FrameLayout>
