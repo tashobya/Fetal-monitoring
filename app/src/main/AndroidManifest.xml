@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wekebere.openapp">
+
+    <!-- PERMISSIONS -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- APPLICATION ACTIVITY -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- CREATING FORGOTTEN STEP ONE ACTIVITY -->
+        <activity android:name=".ForgottenStepOne"></activity>
+        <!-- CREATING FORGOTTEN STEP TWO ACTIVITY -->
+        <activity android:name=".ForgottenStepTwo"></activity>
+        <!-- CREATING FORGOTTEN STEP THREE ACTIVITY -->
+        <activity android:name=".ForgottenStepThree"></activity>
+        <!-- CREATING MESSAGE ACTIVITY -->
+        <activity android:name="com.wekebere.popout.MessagePopOut"></activity>
+        <!-- CREATING NETWORK ACTIVITY -->
+        <activity android:name="com.wekebere.popout.NetworkPopOut"></activity>
+        <!-- CREATING POPOUT ACTIVITY -->
+        <activity android:name="com.wekebere.popout.CreatingPopOut"></activity>
+        <!-- LOGIN ACTIVITY -->
+        <activity android:name=".LoginForm"></activity>
+        <!-- REGISTER ACTIVITY -->
+        <activity android:name=".RegisterForm"></activity>
+        <!-- MAIN ACTIVITY -->
+        <activity android:name="com.wekebere.afterhome.MainActivity"></activity>
+        <!-- WELCOME ACTIVITY -->
+        <activity android:name=".WelcomePage">
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

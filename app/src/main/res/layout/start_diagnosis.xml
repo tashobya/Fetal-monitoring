@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="105px"
+    tools:context="com.wekebere.afterhome.StartDiagnosis">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <ScrollView
+    android:id="@+id/hide_panel"
+   android:visibility="gone"
+   android:layout_width="fill_parent"
+   android:layout_height="match_parent"
+   android:paddingLeft="10px"
+   android:paddingRight="10px"
+   android:scrollbars="none"
+   android:background="@color/white_color">
+   <LinearLayout
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="horizontal"
+    android:layout_marginTop="100px"
+   android:weightSum="1" >
+   <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:gravity="center"
+    android:layout_marginTop="20px"
+    android:orientation="vertical">
+   <TextView
+    android:id="@+id/contract_duration"
+    android:layout_width="250px"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="20px"
+    android:textColor="@color/white_color"
+    android:background="@color/colorPrimaryDark"
+    android:text="0s" />
+   <TextView
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:gravity="center"
+   android:layout_margin="20px"
+   android:textSize="5pt"
+   android:text="Contraction Duration" />
+   <TextView
+   android:id="@+id/heart_rate"
+   android:layout_width="250px"
+   android:layout_height="wrap_content"
+   android:gravity="center"
+   android:padding="20px"
+   android:layout_marginTop="50px"
+   android:textColor="@color/white_color"
+   android:background="@color/colorPrimaryDark"
+   android:text="00" />
+   <TextView
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="5pt"
+    android:layout_margin="20px"
+    android:text="Fetal Heartrate" />
+   </LinearLayout>
+   <LinearLayout
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:layout_weight="0.5"
+   android:gravity="center"
+   android:layout_marginTop="20px"
+   android:orientation="vertical">
+   <TextView
+   android:id="@+id/contract_freq"
+   android:layout_width="250px"
+   android:layout_height="wrap_content"
+   android:gravity="center"
+   android:padding="20px"
+   android:textColor="@color/white_color"
+   android:background="@color/colorPrimaryDark"
+   android:text="0min" />
+   <TextView
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:gravity="center"
+   android:textSize="5pt"
+   android:layout_margin="20px"
+   android:text="Frequency Of Contraction" />
+  <TextView
+  android:id="@+id/temp"
+  android:layout_width="250px"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:padding="20px"
+  android:layout_marginTop="50px"
+  android:textColor="@color/white_color"
+  android:background="@color/colorPrimaryDark"
+  android:text="37" />
+  <TextView
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:gravity="center"
+   android:textSize="5pt"
+   android:layout_margin="20px"
+   android:text="Temperature" />
+   </LinearLayout>
+ </LinearLayout>
+ </ScrollView>
+ <LinearLayout
+ android:layout_width="fill_parent"
+ android:orientation="vertical"
+ android:layout_alignParentBottom="false"
+ android:id="@+id/bottom_display"
+ android:gravity="center"
+ android:layout_marginBottom="30px"
+ android:layout_height="wrap_content">
+ <TextView
+  android:id="@+id/timer_value"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:textSize="16pt"
+  android:layout_marginTop="10px"
+  android:padding="10dp"
+  android:layout_marginBottom="20px"
+  android:text="100s"/>
+ <TextView
+ android:id="@+id/start_again"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:gravity="center"
+ android:textSize="10pt"
+ android:layout_marginLeft="20px"
+ android:layout_marginRight="20px"
+ android:visibility="gone"
+ android:textColor="@color/white_color"
+ android:background="@color/colorAccent"
+ android:layout_marginTop="10px"
+ android:padding="10dp"
+ android:layout_marginBottom="20px"
+ android:text="Start diagnosis"/>
+ <TextView
+ android:id="@+id/dialog_info"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:gravity="center"
+ android:textSize="8pt"
+ android:layout_marginTop="10px"
+ android:padding="10dp"
+ android:layout_marginBottom="20px"
+ android:text="Processing"/>
+<ProgressBar
+ android:id="@+id/Progress_Bar"
+ style="?android:attr/progressBarStyle"
+ android:layout_width="match_parent"
+ android:layout_height="150px" />
+</LinearLayout>
+</RelativeLayout>
+</FrameLayout>

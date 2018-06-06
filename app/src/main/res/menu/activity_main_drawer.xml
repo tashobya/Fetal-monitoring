@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_tab"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/connect_belt"
+            android:icon="@drawable/connect_belt"
+            android:title="Connect wekebere belt" />
+        <item
+            android:id="@+id/view_realtime"
+            android:icon="@drawable/time_line"
+            android:title="Veiw realtime results" />
+        <item
+            android:id="@+id/track_progress"
+            android:icon="@drawable/track_progress"
+            android:title="Track progress" />
+    </group>
+
+    <item android:title="Others">
+     <menu>
+     <item
+     android:id="@+id/nav_share"
+     android:icon="@drawable/ic_menu_share"
+      android:title="Share" />
+     <item
+     android:id="@+id/settngs"
+      android:icon="@drawable/ic_menu_manage"
+      android:title="Settings" />
+      <item
+      android:id="@+id/logout_user"
+      android:icon="@drawable/logout"
+      android:title="Logout" />
+      </menu>
+    </item>
+</menu>
